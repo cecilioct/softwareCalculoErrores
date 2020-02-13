@@ -10,7 +10,12 @@ package proyectoU1;
  * @author cecilio
  */
 public class proyectioU1 extends javax.swing.JFrame {
-
+    double valUno, valDos,vaUno;
+    double REA=0;
+    double RER=0;
+    double TEA=0;
+    double TER=0;
+    operaciones operar=new operaciones();
    
     public proyectioU1() {
         initComponents();
@@ -247,8 +252,11 @@ public class proyectioU1 extends javax.swing.JFrame {
 
     private void CB_RedondeoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB_RedondeoActionPerformed
         // TODO add your handling code here:
+        valUno=Double.parseDouble(txt_vaUno.getText());
+        valDos=Double.parseDouble(txt_valDos.getText());
+        REA=operar.redondeoEA(valUno, valDos);
+        RER=operar.redondeoER(valUno, valDos);
        
-
     }//GEN-LAST:event_CB_RedondeoActionPerformed
 
     private void CB_truncamientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB_truncamientoActionPerformed
