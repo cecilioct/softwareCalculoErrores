@@ -276,7 +276,20 @@ public class proyectioU1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-       
+       if(REA!=0){
+             txt_RedondoEA.setText(String.valueOf(REA));
+             
+        }
+        if(RER!=0){
+            txt_RedondoER.setText(String.valueOf(RER));
+        }
+        
+        if(TEA!=0){
+            txt_TruncaEA.setText(String.valueOf(TEA));
+        }
+        if(TER!=0){
+            txt_TruncaER.setText(String.valueOf(TER));
+        }
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
