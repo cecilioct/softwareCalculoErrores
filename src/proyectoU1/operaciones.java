@@ -18,7 +18,21 @@ public class operaciones {
     public double redondeoER(double Uno, double Dos){
         double E_R=(Uno-Dos)/Uno;
         return E_R;
+    }            
+    
+    //Método para truncamiento
+    public double  truncamientoEA(double Uno){
+        double Dos=Decimales(Uno,2);
+        double E_A=Uno-Dos;   
+        return E_A;
     }
+    
+    public double truncamientoER(double Uno){
+        double Dos=Decimales(Uno,2);
+        double E_R=(Uno-Dos)/Uno;
+        return E_R;
+    }
+    
     
    public static  double Decimales(Double numero , int numeroDecimales ){
         return  Math.round(numero * Math.pow(10, numeroDecimales  ))/Math.pow(10, numeroDecimales);
