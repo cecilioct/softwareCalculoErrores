@@ -260,7 +260,9 @@ public class proyectioU1 extends javax.swing.JFrame {
     }//GEN-LAST:event_CB_RedondeoActionPerformed
 
     private void CB_truncamientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB_truncamientoActionPerformed
-         
+         vaUno=Double.parseDouble(txt_vaUno.getText());
+         TEA=operar.truncamientoEA(vaUno);
+         TER=operar.truncamientoER(vaUno);
         
     }//GEN-LAST:event_CB_truncamientoActionPerformed
 
