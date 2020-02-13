@@ -19,4 +19,9 @@ public class operaciones {
         double E_R=(Uno-Dos)/Uno;
         return E_R;
     }
+    
+   public static  double Decimales(Double numero , int numeroDecimales ){
+        return  Math.round(numero * Math.pow(10, numeroDecimales  ))/Math.pow(10, numeroDecimales);
+    }
+
 }
