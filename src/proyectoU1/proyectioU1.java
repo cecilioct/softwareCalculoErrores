@@ -60,9 +60,9 @@ public class proyectioU1 extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(51, 0, 255));
         jLabel1.setText("Calculo de Errores");
 
-        jLabel2.setText("Valor:");
+        jLabel2.setText("Real");
 
-        jLabel3.setText("P*");
+        jLabel3.setText("Aproximado");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
