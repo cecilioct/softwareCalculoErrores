@@ -12,27 +12,26 @@ package proyectoU1;
 public class operaciones {
      //Métodos para redondeo
      public double redondeoEA(double Uno, double Dos){
-        double E_A=Uno-Dos;
+        double E_A=(Uno-Dos)*-1;
         return E_A;
     }
     public double redondeoER(double Uno, double Dos){
-        double E_R=(Uno-Dos)/Uno;
+        double E_R=((Uno-Dos)*-1)/Uno;
         return E_R;
     }            
     
     //Método para truncamiento
-    public double  truncamientoEA(double Uno){
-        double Dos=Decimales(Uno,2);
+    public double  truncamientoEA(double Uno, int t){
+        double Dos=Decimales(Uno,t);
         double E_A=Uno-Dos;   
         return E_A;
     }
     
-    public double truncamientoER(double Uno){
-        double Dos=Decimales(Uno,2);
+    public double truncamientoER(double Uno, int t){
+        double Dos=Decimales(Uno,t);
         double E_R=(Uno-Dos)/Uno;
         return E_R;
-    }
-    
+    }    
     
    public static  double Decimales(Double numero , int numeroDecimales ){
         return  Math.round(numero * Math.pow(10, numeroDecimales  ))/Math.pow(10, numeroDecimales);
