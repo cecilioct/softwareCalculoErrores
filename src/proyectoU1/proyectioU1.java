@@ -291,8 +291,9 @@ public class proyectioU1 extends javax.swing.JFrame {
 
     private void CB_truncamientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB_truncamientoActionPerformed
          vaUno=Double.parseDouble(txt_vaUno.getText());
-         TEA=operar.truncamientoEA(vaUno);
-         TER=operar.truncamientoER(vaUno);
+        Integer truncar = Integer.parseInt(txt_trunc.getText());
+         TEA=operar.truncamientoEA(vaUno,truncar);
+         TER=operar.truncamientoER(vaUno,truncar);
         
     }//GEN-LAST:event_CB_truncamientoActionPerformed
 
