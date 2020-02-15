@@ -15,6 +15,7 @@ public class proyectioU1 extends javax.swing.JFrame {
     double RER=0;
     double TEA=0;
     double TER=0;
+    int truncar;
     operaciones operar=new operaciones();
    
     public proyectioU1() {
@@ -291,7 +292,7 @@ public class proyectioU1 extends javax.swing.JFrame {
 
     private void CB_truncamientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB_truncamientoActionPerformed
          vaUno=Double.parseDouble(txt_vaUno.getText());
-        Integer truncar = Integer.parseInt(txt_trunc.getText());
+         truncar = Integer.parseInt(txt_trunc.getText());
          TEA=operar.truncamientoEA(vaUno,truncar);
          TER=operar.truncamientoER(vaUno,truncar);
         
